@@ -1,0 +1,110 @@
+html {
+	width: 100%;
+	height: 100%;
+}
+.hsm__body {
+	height: vh;
+	width: 100%;
+
+}
+.hsm__body-pixel {
+	background-image: url(../img/banner/bannerCT.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.hsm__body * {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.hsm__body .hsm__sheet {
+	background: rgba(0,0,0,.5);
+	height: 100vh;
+	padding-left: 5%;
+}
+.hsm__nav {
+	width: 100%;
+	padding: 25px 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hsm__nav-links {
+	list-style-type: none;
+	color: #fff;
+}
+.hsm__nav-links .hsm__nav-link {
+	display: inline-block;
+	color: inherit;
+}
+.hsm__nav-links .hsm__nav-link .hsm__nav-link--href {
+	color: inherit;
+	text-decoration: none;
+	padding: 7px 18px;
+	font-size: 18px;
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 230%;
+    will-change: transform;
+    transform: translateX(0);
+    transition: background-position .4s, color .4s, transform .4s;
+    font-weight: bold;
+}
+.hsm__nav-links .hsm__nav-link {
+	will-change: transform;
+	transition: transform .4s;
+}
+.hsm__nav-links .hsm__nav-link:hover{
+	transform: translateX(10px) !important;
+}
+.hsm__nav-links .hsm__nav-link .hsm__nav-link--href:hover {
+	background-position: 100%;
+    color: #005af0;
+}
+.hsm__hero-text {
+	margin-top: 30px;
+}
+.hsm__hero-text .hsm__hero-text--heading {
+	color: #eee;
+	font-size: 48px;
+}
+.hsm__hero-paragraph {
+	margin-top: 10px;
+	width: 45%;
+}
+.dot-paragraph {
+    position: relative;
+    padding-left: 1rem;
+    border-left: 2px solid #005af0;
+    margin-left: 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 1.8rem;
+    color: #fff;
+    font-size: 16px;
+}
+.dot-paragraph::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top: 0;
+    left: -7px;
+    background-color: #005af0;
+}
+.dot-paragraph--pd0 {
+    padding-bottom: 0;
+}
+.border0 {
+	border: 0;
+}
+.hsm__hero-paragraph--shadow {
+	background: #fff;
+	color: #000;
+	padding: 7px 18px;
+	display: inline-block;
+	border-radius: 4px;
+	margin-bottom: 14px;
+	font-weight: bold;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+	margin-bottom: 25px;
+}
